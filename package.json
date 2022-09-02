@@ -4,9 +4,10 @@
   "description": "",
   "main": "deploy.js",
   "dependencies": {
+    "dotenv": "^16.0.2",
+    "ethers": "^5.7.0",
     "solc": "^0.8.7-fixed"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
